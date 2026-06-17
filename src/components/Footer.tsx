@@ -25,14 +25,14 @@ export function Footer() {
             Let's talk
           </span>
           <h2 className="mt-5 text-[2.4rem] font-semibold leading-[1.05] tracking-[-0.035em] text-foreground sm:text-6xl lg:text-7xl">
-            Let's build something{" "}
+            Your next website should be the{" "}
             <span className="font-display italic font-normal tracking-[-0.02em] text-foreground/95">
-              worth remembering.
+              last one you regret hiring for.
             </span>
           </h2>
           <p className="mt-6 max-w-xl text-base leading-[1.7] text-muted-foreground sm:text-lg">
-            Helping businesses create modern digital experiences that inspire
-            trust and drive long-term growth.
+            A strategy-led partner for founders who are done with template sites,
+            ghosting freelancers, and agency theatre.
           </p>
           <Link
             to="/contact"
