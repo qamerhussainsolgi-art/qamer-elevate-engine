@@ -99,6 +99,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         name: "twitter:description",
         content: "Premium, conversion-focused websites that build trust and drive growth.",
       },
+      { name: "description", content: "Strategic Brand Ascent analyzes and redesigns websites to elevate personal brands and drive client conversions." },
+      { property: "og:description", content: "Strategic Brand Ascent analyzes and redesigns websites to elevate personal brands and drive client conversions." },
+      { name: "twitter:description", content: "Strategic Brand Ascent analyzes and redesigns websites to elevate personal brands and drive client conversions." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/71df5746-2fad-413b-b870-8df6b39858db/id-preview-9d52debc--dbdec541-f302-4f1e-8f50-4284def43411.lovable.app-1781676534595.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/71df5746-2fad-413b-b870-8df6b39858db/id-preview-9d52debc--dbdec541-f302-4f1e-8f50-4284def43411.lovable.app-1781676534595.png" },
     ],
     links: [
       {
