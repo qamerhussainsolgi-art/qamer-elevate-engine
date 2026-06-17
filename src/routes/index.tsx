@@ -70,8 +70,8 @@ function Index() {
         <Process />
         <FAQ
           eyebrow="FAQ"
-          title="Questions, answered."
-          intro="A few of the questions I hear most often. If yours isn't here, the contact form is the fastest way to ask."
+          title="The questions founders actually ask."
+          intro="Pricing, timelines, ownership, risk — answered up front. If yours isn't here, the contact form is the fastest way to ask."
           items={homeFaqs}
         />
         <FinalCTA />
