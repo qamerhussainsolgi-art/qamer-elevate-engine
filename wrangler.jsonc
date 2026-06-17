@@ -1,13 +1,4 @@
 {
-  "$schema": "node_modules/wrangler/config-schema.json",
-  // NOTE: Nitro's Cloudflare preset (cloudflare-module) auto-generates the
-  // real deploy config at build time inside dist/server/wrangler.json,
-  // computing `main` and `assets.directory` itself from the actual output
-  // layout. Setting those keys here would just be overridden (and Nitro
-  // warns when it happens), so this file is intentionally limited to values
-  // Nitro merges in rather than recomputes: the worker name and compatibility
-  // date. `npx wrangler deploy` picks up the generated config automatically
-  // via .wrangler/deploy/config.json after `vite build` runs.
   "name": "qamer-elevate-engine",
   "compatibility_date": "2025-01-01",
   "observability": {
