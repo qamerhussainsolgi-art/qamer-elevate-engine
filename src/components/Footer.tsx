@@ -50,8 +50,8 @@ export function Footer() {
               <span className="font-display text-lg">Qamer Hussain</span>
             </div>
             <p className="mt-5 max-w-xs text-sm leading-relaxed text-muted-foreground">
-              Independent web designer & developer crafting premium,
-              conversion-focused websites for ambitious teams.
+              Strategy-led web designer & developer. Premium, conversion-focused
+              websites for founders who are ready to stop apologising for theirs.
             </p>
           </div>
 
