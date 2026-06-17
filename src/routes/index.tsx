@@ -12,41 +12,45 @@ import { FAQ } from "@/components/FAQ";
 
 const homeFaqs = [
   {
-    q: "What types of websites do you build?",
-    a: "Marketing sites, SaaS product sites, e-commerce stores, landing pages, and bespoke editorial sites — typically for startups, founders, and growing teams who care about craft.",
+    q: "What does this actually cost?",
+    a: "Landing pages start at a fixed fee in the low four figures. Full redesigns and custom builds are quoted as fixed-scope engagements — typically mid to high four figures depending on scope. You get a written quote before anything starts, and the price doesn't move.",
   },
   {
     q: "How long does a typical project take?",
-    a: "Landing pages ship in 1–2 weeks. Full marketing sites land in 3–6 weeks depending on scope. I share a realistic timeline before any engagement starts.",
+    a: "Landing pages: 1–2 weeks. Full redesigns: 3–5 weeks. Custom builds: 4–8 weeks. Every project ships with a fixed launch date — if I miss it, you don't pay the final invoice.",
   },
   {
-    q: "Do you redesign existing websites?",
-    a: "Yes — and most of my work is redesign. I treat redesigns as positioning, not paint, so we'll start by clarifying what's actually broken before touching the design.",
+    q: "What if I'm not happy with the design?",
+    a: "Two structured review rounds are built into every engagement, and we align on direction in writing before a pixel is built. If we're genuinely not aligned after round one, you walk away and only pay for the strategy work delivered.",
   },
   {
-    q: "Do you provide ongoing support after launch?",
-    a: "Optional support and iteration retainers are available. Websites perform best when they keep evolving, and I'm set up to be a long-term partner — not a one-time vendor.",
+    q: "Do I own the website and the code?",
+    a: "Completely. You own the code, the design files, the domain, and the hosting account. Nothing locks you into me — including me.",
   },
   {
-    q: "Who do you typically work with?",
-    a: "Founders, marketing leads, and small in-house teams at startups, SaaS companies, agencies, and ambitious independent brands.",
+    q: "How do we communicate during the project?",
+    a: "You work with me directly — not an account manager. Weekly written updates, a shared project doc, and async messages answered within 24 hours on workdays.",
+  },
+  {
+    q: "Who do you work with?",
+    a: "Founders, marketing leads, and small in-house teams at startups, SaaS companies, agencies, and ambitious independent brands — typically businesses that are quietly outgrowing the website they have.",
   },
 ];
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Qamer Hussain — Website Developer for Startups & E-commerce" },
+      { title: "Qamer Hussain — Conversion-Focused Websites for Founders" },
       {
         name: "description",
         content:
-          "Modern, fast, conversion-focused websites for startups and e-commerce businesses. Clean code, responsive design, and SEO-ready structure.",
+          "I turn underperforming websites into clear, credible, conversion-ready assets that bring in qualified inquiries. Fixed scope, fixed price, launch guarantee.",
       },
-      { property: "og:title", content: "Qamer Hussain — Website Developer" },
+      { property: "og:title", content: "Qamer Hussain — Websites Built to Win Clients" },
       {
         property: "og:description",
         content:
-          "Websites that build trust, improve conversions, and help businesses grow.",
+          "Strategy-led web design and development for founders who want their website to start earning its keep.",
       },
     ],
   }),
