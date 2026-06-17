@@ -2,52 +2,52 @@ import { Layout, Code2, Target, Check } from "lucide-react";
 
 const services = [
   {
-    icon: Layout,
-    eyebrow: "01 — Design",
-    title: "Website Design",
-    focus: "Brand perception, user trust, and visual hierarchy.",
+    icon: Target,
+    eyebrow: "01 — Convert",
+    title: "High-Converting Landing Pages",
+    focus: "For founders running paid traffic, launches, or campaigns.",
     description:
-      "A premium, conversion-aware design system tailored to how your audience actually decides — so your site earns trust the moment it loads.",
+      "A single-purpose page engineered around one outcome: more qualified leads or signups. Positioning, copy direction, design, and build — done in a single sprint.",
     deliverables: [
-      "Brand-aligned visual system",
-      "Wireframes & high-fidelity design",
-      "Responsive design for every breakpoint",
-      "Design QA and handoff",
+      "Offer + messaging strategy",
+      "Conversion-engineered page design",
+      "Copy direction & section-by-section structure",
+      "Fast, lightweight build with analytics + A/B-ready hooks",
     ],
-    timeline: "2 – 4 weeks",
-    idealFor: "Founders refining their positioning and ready to raise the bar visually.",
+    timeline: "1 – 2 weeks",
+    idealFor: "Founders burning ad spend on a page that doesn&apos;t convert.",
+  },
+  {
+    icon: Layout,
+    eyebrow: "02 — Reposition",
+    title: "Premium Website Redesign",
+    focus: "For businesses that look smaller than they actually are.",
+    description:
+      "A full repositioning of your website — strategy, structure, messaging, and design — so it finally matches the calibre of business you&apos;re running and the clients you want to attract.",
+    deliverables: [
+      "Positioning & messaging audit",
+      "Site architecture and user-flow design",
+      "Brand-aligned visual system, every breakpoint",
+      "Conversion-tuned hero, services, work, and contact flows",
+    ],
+    timeline: "3 – 5 weeks",
+    idealFor: "Founders whose site no longer reflects what they sell or charge.",
   },
   {
     icon: Code2,
-    eyebrow: "02 — Build",
-    title: "Website Development",
-    focus: "Speed, scalability, and long-term performance.",
+    eyebrow: "03 — Scale",
+    title: "Custom Website Build",
+    focus: "For teams replacing template stacks with something they own.",
     description:
-      "Production-grade development with clean architecture, fast load times, and an editing setup your team can confidently grow with.",
+      "A bespoke, production-grade website built on a modern stack — fast, accessible, SEO-ready, and structured so your team can grow it without rebuilding from scratch in 18 months.",
     deliverables: [
-      "Modern React codebase",
-      "Performance & Core Web Vitals tuning",
-      "Tailwind CSS styling",
-      "Analytics & SEO foundations",
+      "Custom React + Tailwind codebase",
+      "Core Web Vitals tuning & technical SEO",
+      "CMS or content structure your team can edit",
+      "Documented handoff and 30 days post-launch support",
     ],
-    timeline: "3 – 6 weeks",
-    idealFor: "Teams replacing dated stacks or scaling beyond a builder template.",
-  },
-  {
-    icon: Target,
-    eyebrow: "03 — Convert",
-    title: "Conversion-Focused Landing Pages",
-    focus: "Lead generation, sales, and user action.",
-    description:
-      "Single-purpose pages engineered around one outcome — qualified leads, signups, or bookings — backed by clear messaging and refined UX.",
-    deliverables: [
-      "Positioning & messaging strategy",
-      "Conversion-optimised page design",
-      "Fast, lightweight build",
-      "A/B test-ready structure",
-    ],
-    timeline: "1 – 2 weeks",
-    idealFor: "Businesses running campaigns, launches, or paid acquisition.",
+    timeline: "4 – 8 weeks",
+    idealFor: "Teams scaling past Webflow/Squarespace and needing real engineering.",
   },
 ];
 
@@ -55,22 +55,20 @@ export function Services() {
   return (
     <section id="services" className="relative">
       <div className="relative mx-auto max-w-7xl px-6 py-28 lg:py-40">
-        {/* Section header */}
         <div className="max-w-xl">
           <span className="text-[11px] font-semibold uppercase tracking-[0.22em] text-muted-foreground">
             Services
           </span>
           <h2 className="mt-4 text-[2.2rem] font-semibold leading-[1.1] tracking-[-0.03em] text-foreground sm:text-5xl">
-            Built to Help Businesses Grow Online
+            Three ways I help founders win online
           </h2>
           <p className="mt-5 text-base leading-[1.7] text-muted-foreground sm:text-lg">
-            From strategy and design to development and launch, every website
-            is crafted to build trust, improve user experience, and generate
-            business results.
+            Each engagement is fixed scope, fixed price, and structured around a
+            single business outcome — more inquiries, better positioning, or a
+            stack you actually own.
           </p>
         </div>
 
-        {/* Service cards grid */}
         <div className="mt-16 grid grid-cols-1 gap-6 lg:gap-8">
           {services.map((service) => (
             <article
@@ -99,22 +97,25 @@ export function Services() {
                 <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2">
                   <div>
                     <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
-                      Typical timeline
+                      Timeline
                     </p>
                     <p className="mt-2 text-sm text-foreground">{service.timeline}</p>
                   </div>
                   <div>
                     <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
-                      Ideal for
+                      Best for
                     </p>
-                    <p className="mt-2 text-sm text-foreground/90">{service.idealFor}</p>
+                    <p
+                      className="mt-2 text-sm text-foreground/90"
+                      dangerouslySetInnerHTML={{ __html: service.idealFor }}
+                    />
                   </div>
                 </div>
               </div>
 
               <div className="rounded-xl border border-border/80 bg-surface/40 p-6 sm:p-7">
                 <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-muted-foreground">
-                  What's included
+                  What&apos;s included
                 </p>
                 <ul className="mt-5 space-y-3.5 text-sm text-foreground/90">
                   {service.deliverables.map((d) => (
@@ -129,9 +130,9 @@ export function Services() {
           ))}
         </div>
 
-        {/* Bottom statement */}
         <p className="mt-20 text-center text-sm leading-relaxed text-muted-foreground">
-          Focused on quality, performance, and long-term business value.
+          Fixed scope. Fixed price. Launch on the date promised — or you don&apos;t
+          pay the final invoice.
         </p>
       </div>
     </section>

@@ -1,25 +1,41 @@
 import {
   ArrowRight,
-  Zap,
-  Smartphone,
-  Search,
-  MousePointerClick,
+  TrendingUp,
+  ShieldCheck,
+  Gauge,
+  MessageSquare,
   Circle,
 } from "lucide-react";
 import { Link } from "@tanstack/react-router";
 
 const trustSignals = [
-  "Freelance Developer",
-  "Fast Delivery",
-  "Clean Modern Code",
-  "100% Custom Design",
+  "Strategy-led",
+  "Conversion-focused",
+  "Direct access, no agency layer",
+  "Senior-level delivery",
 ];
 
 const capabilities = [
-  { icon: Zap, label: "Fast Performance", meta: "Built for speed" },
-  { icon: Smartphone, label: "Responsive Design", meta: "Mobile-first" },
-  { icon: Search, label: "SEO Optimized", meta: "Semantic HTML" },
-  { icon: MousePointerClick, label: "Conversion UI", meta: "Tested flows" },
+  {
+    icon: TrendingUp,
+    label: "Built to generate inquiries",
+    meta: "Messaging + UX engineered for conversion",
+  },
+  {
+    icon: ShieldCheck,
+    label: "Credibility on first scroll",
+    meta: "Positioning that earns trust in 5 seconds",
+  },
+  {
+    icon: Gauge,
+    label: "Engineered for performance",
+    meta: "Sub-2s loads, 90+ Core Web Vitals",
+  },
+  {
+    icon: MessageSquare,
+    label: "One partner, end-to-end",
+    meta: "Strategy, design, build — no handoffs",
+  },
 ];
 
 export function Hero() {
@@ -38,24 +54,24 @@ export function Hero() {
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-60" />
               <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-emerald-400" />
             </span>
-            Available for new projects · Q3 2026
+            Accepting 2 new clients this quarter
           </div>
 
           <h1 className="mt-8 text-balance text-[2.25rem] font-semibold leading-[1.06] tracking-[-0.035em] text-foreground sm:text-[2.75rem] md:text-6xl lg:text-[4.4rem] lg:leading-[1.02]">
-            Websites that{" "}
+            Your website should be your{" "}
             <span className="font-display italic font-normal tracking-[-0.02em] text-foreground/95">
-              build trust
+              best salesperson
             </span>
-            ,<br className="hidden sm:block" /> convert visitors, and{" "}
+            <br className="hidden sm:block" /> — not your{" "}
             <span className="font-display italic font-normal tracking-[-0.02em] bg-gradient-to-r from-foreground via-foreground to-foreground/60 bg-clip-text text-transparent">
-              grow brands.
+              biggest excuse.
             </span>
           </h1>
 
           <p className="mt-7 max-w-xl text-[1.05rem] leading-[1.7] text-muted-foreground sm:text-lg">
-            I'm Qamer — a freelance web developer building modern, fast, and
-            scalable websites for startups and online businesses that need a
-            stronger digital presence.
+            I&apos;m Qamer Hussain. I partner with founders and growing teams to
+            turn underperforming websites into clear, credible, conversion-ready
+            assets that bring in qualified inquiries while you sleep.
           </p>
 
           <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:items-center">
@@ -72,7 +88,7 @@ export function Hero() {
                       "linear-gradient(135deg, oklch(1 0 0 / 0.15), transparent 55%)",
                   }}
                 />
-                Start Your Project
+                Book a Free Strategy Call
                 <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5" />
               </Link>
               <Link
@@ -80,14 +96,15 @@ export function Hero() {
                 preload="intent"
                 className="inline-flex items-center gap-2 rounded-full border border-border bg-surface/60 px-6 py-3.5 text-sm font-medium text-foreground backdrop-blur transition-all duration-300 hover:border-foreground/20 hover:bg-surface-elevated"
               >
-                View Work
+                See Recent Work
               </Link>
             </div>
           </div>
 
           <p className="mt-3 flex items-center gap-2 text-xs text-muted-foreground">
             <span className="inline-block h-1 w-1 rounded-full bg-emerald-400" />
-            Response within 24 hours · No commitment required
+            20-minute call · I&apos;ll review your site live and share 3 fixes you
+            can use either way
           </p>
 
           {/* Trust signals — inline, dot-separated */}
@@ -108,10 +125,8 @@ export function Hero() {
           className="relative hidden min-h-[540px] animate-hero-rise sm:block lg:min-h-[620px]"
           style={{ animationDelay: "120ms" }}
         >
-          {/* Soft glow behind */}
           <div className="absolute -inset-10 -z-10 rounded-full bg-accent/10 blur-3xl" />
 
-          {/* Main browser card — floating */}
           <div className="absolute left-0 right-8 top-2 animate-float-slow rounded-xl border border-border bg-card shadow-2xl shadow-black/40">
             <div className="flex items-center gap-2 border-b border-border px-4 py-3">
               <Circle className="h-2.5 w-2.5 fill-red-400/70 text-red-400/70" />
@@ -157,7 +172,6 @@ export function Hero() {
             </div>
           </div>
 
-          {/* Mobile preview — floating slower */}
           <div className="absolute -right-2 top-32 hidden w-[160px] animate-float-slower rounded-[1.4rem] border border-border bg-card p-2 shadow-2xl shadow-black/50 sm:block">
             <div className="rounded-[1rem] border border-border bg-background p-3">
               <div className="mx-auto h-1 w-10 rounded-full bg-muted" />
@@ -175,7 +189,6 @@ export function Hero() {
             </div>
           </div>
 
-          {/* Capability cards strip */}
           <div className="absolute inset-x-0 bottom-0 grid grid-cols-2 gap-3">
             {capabilities.map(({ icon: Icon, label, meta }) => (
               <div

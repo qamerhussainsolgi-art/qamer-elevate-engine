@@ -1,9 +1,29 @@
 const steps = [
-  { n: "01", title: "Discovery", desc: "Understanding goals, audience, and business needs." },
-  { n: "02", title: "Strategy", desc: "Creating structure, user flows, and content direction." },
-  { n: "03", title: "Design", desc: "Crafting a modern experience focused on trust and clarity." },
-  { n: "04", title: "Development", desc: "Building a fast, scalable, responsive website." },
-  { n: "05", title: "Launch", desc: "Testing, optimization, deployment, and ongoing support." },
+  {
+    n: "01",
+    title: "Strategy Call",
+    desc: "We pressure-test the business goal, the audience, and what the site actually needs to do — before a single pixel moves.",
+  },
+  {
+    n: "02",
+    title: "Positioning & Structure",
+    desc: "Messaging hierarchy, sitemap, and section-by-section blueprint. You approve the plan before design starts.",
+  },
+  {
+    n: "03",
+    title: "Design",
+    desc: "A premium visual system built around your brand and conversion goals. Two structured review rounds, no surprises.",
+  },
+  {
+    n: "04",
+    title: "Build",
+    desc: "Production-grade React + Tailwind code, Core Web Vitals tuned, SEO-ready, fully responsive. You see progress weekly.",
+  },
+  {
+    n: "05",
+    title: "Launch & Handoff",
+    desc: "QA, analytics, deployment, and a documented handoff. 30 days of post-launch support included on every full build.",
+  },
 ];
 
 export function Process() {
@@ -15,15 +35,15 @@ export function Process() {
             Process
           </span>
           <h2 className="mt-4 text-[2.2rem] font-semibold leading-[1.1] tracking-[-0.03em] text-foreground sm:text-5xl">
-            A Simple Process Designed Around Results
+            A clear path from underperforming to undeniable
           </h2>
           <p className="mt-5 text-base leading-[1.7] text-muted-foreground sm:text-lg">
-            A clear, collaborative workflow built to remove friction and deliver
-            websites that perform from day one.
+            No vague timelines, no scope creep, no agency theatre. Five
+            structured steps with a written deliverable at every stage.
           </p>
         </div>
 
-        {/* Desktop: horizontal timeline */}
+        {/* Desktop */}
         <ol className="relative mt-20 hidden lg:block">
           <div
             aria-hidden
@@ -48,7 +68,7 @@ export function Process() {
           </div>
         </ol>
 
-        {/* Mobile/tablet: vertical timeline */}
+        {/* Mobile */}
         <ol className="relative mt-16 lg:hidden">
           <div
             aria-hidden

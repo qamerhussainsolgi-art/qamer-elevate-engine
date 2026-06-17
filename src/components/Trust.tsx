@@ -1,95 +1,89 @@
-import { Palette, Gauge, MessageSquare, ShieldCheck } from "lucide-react";
+import { Target, Gauge, MessageSquare, ShieldCheck } from "lucide-react";
 
 const cards = [
   {
-    icon: Palette,
-    title: "Custom Design Approach",
+    icon: Target,
+    title: "Built for inquiries, not awards",
     description:
-      "Every project is designed specifically for the business rather than relying on generic templates.",
+      "Every layout, headline, and CTA is engineered around one outcome: more qualified leads landing in your inbox.",
   },
   {
     icon: Gauge,
-    title: "Performance Focused",
+    title: "Performance you can sell on",
     description:
-      "Fast loading, responsive experiences optimized across devices.",
+      "Sub-2s load times, 90+ Core Web Vitals, and SEO foundations that hold up under scrutiny from buyers and search engines.",
   },
   {
     icon: MessageSquare,
-    title: "Clear Communication",
+    title: "Direct, founder-to-founder",
     description:
-      "Transparent collaboration from planning to launch.",
+      "You work with me — not an account manager. Decisions move in hours, not weeks.",
   },
   {
     icon: ShieldCheck,
-    title: "Long-Term Quality",
+    title: "Fixed scope. Fixed price. No surprises.",
     description:
-      "Built with scalability, maintainability, and future growth in mind.",
+      "You get a written scope, a fixed quote, and a guarantee: if I miss the agreed launch date, you don&apos;t pay the final invoice.",
   },
 ];
 
 const trustBarItems = [
-  "Modern Design",
-  "Responsive Development",
-  "Clean Code",
-  "Conversion Focus",
-  "Business Growth",
+  "Strategy first",
+  "Senior-level build",
+  "Conversion-engineered",
+  "Owned by you",
+  "Built to scale",
 ];
 
 export function Trust() {
   return (
     <section id="trust" className="relative">
       <div className="relative mx-auto max-w-7xl px-6 py-28 lg:py-40">
-        {/* Section header */}
         <div className="max-w-xl">
           <span className="text-[11px] font-semibold uppercase tracking-[0.22em] text-muted-foreground">
-            Trust &amp; Credibility
+            Why founders trust the work
           </span>
           <h2 className="mt-4 text-[2.2rem] font-semibold leading-[1.1] tracking-[-0.03em] text-foreground sm:text-5xl">
-            Built Around Trust, Performance, and Results
+            A senior partner — at a fraction of the agency cost
           </h2>
           <p className="mt-5 text-base leading-[1.7] text-muted-foreground sm:text-lg">
-            Every project is approached with attention to detail, modern
-            development standards, and a focus on helping businesses establish a
-            stronger online presence.
+            Most agencies sell process. Most freelancers sell hours. I sell
+            outcomes — and back them with fixed pricing, a fixed timeline, and
+            a launch guarantee.
           </p>
         </div>
 
-        {/* Two-column layout */}
         <div className="mt-16 grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16">
-          {/* Left — Trust statement */}
           <div className="flex items-center">
             <blockquote className="text-xl font-medium leading-[1.5] tracking-[-0.01em] text-foreground sm:text-[1.35rem] lg:text-[1.5rem]">
-              Great websites aren&apos;t just designed. They&apos;re carefully
-              crafted to build confidence, communicate value, and help
-              businesses grow.
+              A website isn&apos;t a deliverable. It&apos;s the asset that decides
+              whether the next visitor becomes a client — or quietly closes the
+              tab.
             </blockquote>
           </div>
 
-          {/* Right — Credibility cards */}
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5">
             {cards.map((card) => (
               <div
                 key={card.title}
                 className="group relative flex flex-col overflow-hidden rounded-2xl border border-border bg-card/60 p-5 backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 hover:border-foreground/20 hover:bg-card/80 hover:shadow-[0_0_0_1px_oklch(1_0_0_/_0.06),0_24px_60px_-24px_oklch(0_0_0_/_0.5)] sm:p-6"
               >
-                {/* Icon */}
                 <div className="grid h-9 w-9 place-items-center rounded-full border border-border bg-surface/60 transition-all duration-300 group-hover:border-foreground/15 group-hover:bg-surface-elevated">
                   <card.icon className="h-4 w-4 text-muted-foreground transition-colors duration-300 group-hover:text-foreground" />
                 </div>
 
-                {/* Content */}
                 <h3 className="mt-4 text-sm font-semibold tracking-[-0.01em] text-foreground">
                   {card.title}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                  {card.description}
-                </p>
+                <p
+                  className="mt-2 text-sm leading-relaxed text-muted-foreground"
+                  dangerouslySetInnerHTML={{ __html: card.description }}
+                />
               </div>
             ))}
           </div>
         </div>
 
-        {/* Trust bar */}
         <div className="mt-20">
           <div className="flex flex-wrap items-center justify-center gap-y-3">
             {trustBarItems.map((item, index) => (
